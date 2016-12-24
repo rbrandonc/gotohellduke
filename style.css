@@ -1,0 +1,30 @@
+html{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #7BAFD4;
+	overflow: hidden;
+}
+
+video {
+	height: 50%;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float:right;
+}
