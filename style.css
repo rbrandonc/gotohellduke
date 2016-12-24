@@ -28,3 +28,27 @@ video {
 .right{
 	float:right;
 }
+
+@media only screen and (max-device-width: 480px) {
+	html{
+		padding: 0;
+		margin: 0;
+		height: 100%;
+		width: 100%;
+	}
+
+	body{
+		padding: 0;
+		margin: 0;
+		height: 100%;
+		width: 100%;
+		background-color: #7BAFD4;
+	}
+
+	video {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		display: block;
+	}
+}
