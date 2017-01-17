@@ -78,8 +78,8 @@ $(document).ready(function(){
     // for(var x = 0; x < 300; x++)
     // 	$("#line").append("<div class = \"wincircle\"></div>");
 
-    $("#line").height($(document).height() - screen.height);
-    var offset3 = screen.height + 500;
+    $("#line").height($(document).height() - $(window).height());
+    var offset3 = $(window).height() + 100;
     $("#line").css({
 	    top: offset3
     });
