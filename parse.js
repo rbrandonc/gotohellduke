@@ -79,9 +79,9 @@ $(document).ready(function(){
     // 	$("#line").append("<div class = \"wincircle\"></div>");
 
     $("#line").height($(document).height() - screen.height);
-
+    var offset3 = screen.height + 500;
     $("#line").css({
-	    top: screen.height + 500;
+	    top: offset3;
     });
 
     return returnValue;
