@@ -8,47 +8,175 @@ html{
 body{
 	padding: 0;
 	margin: 0;
-	height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+header{
 	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	font-size: 50px;
+	text-align: center;
+	font-family: "Times New Roman";
+	box-shadow: 0px -15px 27px 9px rgba(0,0,0,0.69);
+	color: white;
+}
+
+h1{
+	padding-top: 5%;
+	padding-bottom: 0px;
+	font-size: 150;
+	margin-bottom: 0;
+}
+
+h2{
+	padding-top: 0;
+	margin-top: 0;
+}
+
+img{
+	transform: translateY(50%);
+}
+
+.title{
+}
+
+.textcontainer{
+	background-color: 	#7BAFD4;
+	width: 100%;
+	flex: 1;
+}
+
+#line{
+
+    transform: translateX(-50%);
+	height: 100%;
+	position: absolute;
+	top: 1500px;
+    left: 50%;
+    content: '';
+  position: absolute;
+  top: 0;
+  width: 4px;
+  background: #d7e4ed;
+  margin-bottom: 500px;
+}
+
+#timeline{
+	width: 100%;
+	overflow:auto;
+	text-align: center;
+}
+
+.datecontainer{
+	position: absolute;
+
+	left: 50%;
+    transform: translateX(-110%);
+	color: white;
+	font-weight: bold;
+	font-family: arial;
+	display: flex;
+	flex-direction: row;
+}
+
+.datecontainerright{
+	position: absolute;
+	
+    left: 50%;
+    transform: translateX(10%);
+	color: white;
+	font-weight: bold;
+	font-family: arial;
+	display: flex;
+	flex-direction: row;
+}
+
+.date{
 	background-color: #7BAFD4;
-	overflow: hidden;
+	padding: 5px;
 }
 
-video {
-	height: 50%;
-	margin: 0;
-	padding: 0;
-	display: block;
+.description{
+	background-color: white;
+	color: #333;
+	padding: 10px;
+	width: 400px;
 }
 
-.left{
+.icon{
+	background-color: white;
+	width: 50px;
 	float: left;
 }
 
-.right{
-	float:right;
+.iconright{
+	float: right;
+		background-color: white;
+	width: 50px;
 }
 
-@media only screen and (max-device-width: 480px) {
-	html{
-		padding: 0;
-		margin: 0;
-		height: 100%;
-		width: 100%;
-	}
+.arrowright {
+	background-color: rgba(0, 0, 0, 0);
+	width: 5px;
+	border-top: 42px solid transparent;
+	border-bottom: 42px solid transparent;
+	border-left: 20px solid #7BAFD4;
+}
 
-	body{
-		padding: 0;
-		margin: 0;
-		height: 100%;
-		width: 100%;
-		background-color: #7BAFD4;
-	}
+.arrowleft {
+	background-color: rgba(0, 0, 0, 0);
+	width: 5px;
+	border-top: 42px solid transparent;
+	border-bottom: 42px solid transparent;
+	border-right: 20px solid #7BAFD4;
+}
 
-	video {
-		width: 100%;
-		margin: 0;
-		padding: 0;
-		display: block;
-	}
+.arrowdown {
+	width: 0;
+	height: 0;
+	background-color: rgba(0, 0, 0, 0);
+	border-left:  50vw solid transparent;
+	border-right: 50vw solid transparent;
+
+	border-top: 100px solid #7BAFD4;    
+}
+
+.shadow{
+	filter: url(/assets/svg/shadow.svg#drop-shadow);
+    -webkit-filter: drop-shadow(-2px 2px 2px rgba(0,0,0,0.5));
+    filter: drop-shadow(-2px 2px 2px rgba(0,0,0,0.5));
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='rgba(0,0,0,0.3)')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color='rgba(0,0,0,0.3)');
+}
+
+.monthcircle {
+	background-color: #7BAFD4;
+	border-radius: 4px;
+	width: 5px;
+	height: 5px;
+	float: left;
+
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.wincircle{
+	background-color: #7BAFD4;
+	border-radius: 4px;
+	width: 8px;
+	height: 8px;
+	float: left;
+
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
