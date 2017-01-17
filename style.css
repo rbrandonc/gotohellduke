@@ -111,6 +111,7 @@ img{
 	background-color: white;
 	width: 50px;
 	float: left;
+	flex: 1;
 }
 
 .iconright{
