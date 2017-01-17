@@ -57,11 +57,9 @@ img{
     transform: translateX(-50%);
 	height: 100%;
 	position: relative;
-	top: 1500px;
     left: 50%;
     content: '';
   position: absolute;
-  top: 0;
   width: 4px;
   background: #d7e4ed;
   margin-bottom: 500px;

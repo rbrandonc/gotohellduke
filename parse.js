@@ -81,7 +81,7 @@ $(document).ready(function(){
     $("#line").height($(document).height() - screen.height);
 
     $("#line").css({
-	    top: screen.height
+	    top: screen.height + 500;
     });
 
     return returnValue;
