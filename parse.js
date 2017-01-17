@@ -58,7 +58,7 @@ $(document).ready(function(){
     	}
 
     	offset *= 150;
-    	offset+= screen.height + 100;
+    	offset+= $(window).height() + 100;
 
     	$("#timeline div:last-child").css({
 	        top: offset
