@@ -81,7 +81,7 @@ $(document).ready(function(){
     $("#line").height($(document).height() - screen.height);
     var offset3 = screen.height + 500;
     $("#line").css({
-	    top: offset3;
+	    top: offset3
     });
 
     return returnValue;
